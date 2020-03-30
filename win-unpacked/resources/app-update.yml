@@ -1,0 +1,3 @@
+provider: generic
+url: 'http://wanruowuken.gitee.io/electronic_updater_upgrade/'
+updaterCacheDirName: vue-admin-template-updater

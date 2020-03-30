@@ -1,0 +1,32 @@
+directories:
+  output: electron-builder-output-dir
+  buildResources: build
+  app: electron-builder-output-dir/bundled
+files:
+  - filter:
+      - '**'
+extends: null
+publish:
+  - provider: generic
+    url: 'http://wanruowuken.gitee.io/electronic_updater_upgrade/'
+win:
+  icon: /Users/cuideyong/Desktop/开发/北京馨泽亿家网络科技有限公司/客户端项目测试/online_testing/public/favicon.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  perMachine: true
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: /Users/cuideyong/Desktop/开发/北京馨泽亿家网络科技有限公司/客户端项目测试/online_testing/public/favicon.ico
+  installerHeaderIcon: /Users/cuideyong/Desktop/开发/北京馨泽亿家网络科技有限公司/客户端项目测试/online_testing/public/favicon.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: demo
+mac:
+  icon: /Users/cuideyong/Desktop/开发/北京馨泽亿家网络科技有限公司/客户端项目测试/online_testing/public/logo.png
+copyright: Copyright © 2020_1.0
+productName: 身份证系统客户端
+electronVersion: 6.1.9
